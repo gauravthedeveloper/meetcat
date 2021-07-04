@@ -467,7 +467,19 @@
 </footer>
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $.ajax({
+          url:"https://mypocketworld.in/gaurav_get-all",
+          type:"GET",
+          dataType:"json",
+          success:function(result){
+            console.log(result);
+          }
+        });
+      });
+    </script>
 </body>
 
 
